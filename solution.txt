@@ -1,0 +1,14 @@
+git clone https://github.com/s16560/epg1_git.git
+cd epg1_git
+git branch hw-s16560
+git checkout rebase_me
+git rebase hw-s16560
+git checkout hw-s16560
+git merge rebase-me
+git merge origin/merge-me
+git nano README.md
+git add README.md
+git commit -m "Rozwiazane konflikty w README.md"
+git add solution.txt
+git commit -m "Dodano solution.txt"
+git push -m origin hw-s16560
